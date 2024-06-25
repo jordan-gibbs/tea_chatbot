@@ -29,8 +29,8 @@ if "messages" not in st.session_state:
     initial_prompt = (
         "You are performing an interview to find the best tea from the following list of products: \n"
         + product_data +
-        "\nPlease start by asking the user about their taste preferences to narrow down the choices."
-        "When you indentify which tea the user wants, please output the product descripton complete with the hyperlink and image."
+        "\nAlways ask more than one question, but never more than three. Always be very concise."
+        "\nWhen you indentify which tea the user wants, please output the product descripton complete with the hyperlink and image. Never output a list of products, only one at a time."
     )
     st.session_state.messages.append({"role": "system", "content": initial_prompt})
     initial_response = "**Hello, I'm Bloom!** I'm here to help you find the best tea from our selection.\n\nTo get started, could you tell me a bit about your taste preferences? Do you prefer green tea, black tea, herbal tea, or something else?"
