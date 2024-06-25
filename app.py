@@ -15,6 +15,13 @@ def load_product_data():
 product_data = load_product_data()
 
 # st.title("Tea Product Explorer")
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Initialize chat history and check if it's the first run
 if "messages" not in st.session_state:
