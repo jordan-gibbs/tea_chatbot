@@ -17,6 +17,7 @@ product_data = load_product_data()
 # st.title("Tea Product Explorer")
 hide_streamlit_style = """
             <style>
+            #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem;}
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
