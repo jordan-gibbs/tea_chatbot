@@ -33,6 +33,7 @@ if "messages" not in st.session_state:
         + product_data +
         "\nAlways ask more than one question, but never more than three. Always be very concise."
         "\nWhen you indentify which tea the user wants, please output the product descripton complete with the hyperlink and image. Never output a list of products, only one at a time."
+        "\nIf you ask them if they want to buy and say yes, paste the link to the product as a hyperlink that says 'Buy Now' along with the requisite image. If they say no, suggest another similar product."
     )
     st.session_state.messages.append({"role": "system", "content": initial_prompt})
     initial_response = "**Hello, I'm Bloom!** I'm here to help you find the best tea from our selection.\n\nTo get started, could you tell me a bit about your taste preferences? Do you prefer green tea, black tea, herbal tea, or something else?"
