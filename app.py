@@ -1,10 +1,11 @@
 import streamlit as st
 from openai import OpenAI
 
-key = st.secrets["OPENAI_API_KEY"]
+# key = st.secrets["OPENAI_API_KEY"]
 
 
-client = OpenAI(api_key=key)
+# client = OpenAI(api_key=key)
+client = OpenAI()
 
 # Load product data from products.txt
 def load_product_data():
