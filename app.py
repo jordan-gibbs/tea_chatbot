@@ -37,7 +37,7 @@ if "messages" not in st.session_state:
         "\nIf you ask them if they want to buy and say yes, paste the link to the product as an H3 hyperlink that says 'Buy Now' along with the requisite image. If they say no, suggest another similar product. Do not ever recommend a product that isn't directly relevant to the user's request. If the product doesn't exist, then just say so and suggest something similar."
     )
     st.session_state.messages.append({"role": "system", "content": initial_prompt})
-    initial_response = "**Hello, I'm your intelligent assistant, Bloom!** I'm here to help you find your ideal tea.\n\nCan you tell me a bit about your taste preferences? Do you prefer green, black, or herbal teas?"
+    initial_response = "**Hello, I'm your product advisor, Bloom!** I'm here to help you find your ideal tea.\n\nCan you tell me a bit about your taste preferences? Do you prefer green, black, or herbal teas?"
     st.session_state.initialized = False
 else:
     st.session_state.initialized = True
